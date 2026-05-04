@@ -1,0 +1,19 @@
+# =============================================================================
+# providers.tf — Azure provider configuration
+# Author: Nerea Arce | github.com/arcenerea
+# =============================================================================
+
+terraform {
+  required_version = ">= 1.0"
+
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "~> 3.0"
+    }
+  }
+}
+
+provider "azurerm" {
+  features {}
+}
